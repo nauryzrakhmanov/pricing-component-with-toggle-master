@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6fe;
+  position: relative;
+  font-size: 15px;
+}
+.heading-primary {
+  font-size: 20px;
+  font-weight: 700;
+}
+.heading-secondary {
+  font-size: 15px;
+}
+#top-section {
+  margin-top: 100px;
+  text-align: center;
+}
+#top-section .sub-header {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #6d708d;
+}
+#top-section .sub-header .plan-type {
+  padding: 20px;
+}
+.toggle-container .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  background-color: #b3b5c6;
+  opacity: 0.8;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.toggle-container .switch::after {
+  content: '';
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0.2rem;
+  right: 0.25rem;
+  transition: 0.35s;
+}
+.toggle-container .checkbox {
+  display: none;
+}
+.toggle-container .checkbox:checked + .switch::after {
+  right: 3.2rem;
+}
+.plans-section {
+  display: flex;
+  text-align: center;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+.plans-section .plan {
+  border: 1px solid #f6f6fe;
+  padding: 2rem;
+  width: 30rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.6rem 1.6rem #b3b5c6;
+  color: #494c5f;
+  font-weight: 600;
+  background-color: #f6f6fe;
+}
+.plans-section .plan .plan-price {
+  padding: 1.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans-section .plan .plan-price span {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+.plans-section .plan .plan-price h1 {
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 800;
+}
+.plans-section .plan .plan-features {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.plans-section .plan .plan-features__item {
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+.plans-section .plan .plan-features__item:nth-child(1) {
+  border-top: 1px solid #e3e3e3;
+}
+.plans-section .plan .btn {
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 1px solid #696fdd;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  background-color: #696fdd;
+}
+.plans-section .plan .btn:hover {
+  color: #696fdd;
+  background-color: transparent;
+}
+.plans-section .basic {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.plans-section .pro {
+  padding: 4rem 2rem;
+  z-index: 10;
+  color: #fff;
+  background-color: #696fdd;
+  border: 1px solid #696fdd;
+}
+.plans-section .pro .btn {
+  border: 0.1rem solid #f6f6fe;
+  color: #696fdd;
+  background-color: #fff;
+}
+.plans-section .pro .btn:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.plans-section .master {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.attribution {
+  margin-top: 20px; 
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a:link,
+.attribution a:visited {
+  text-decoration: none; 
+  font-weight: 600;
+}
+.bg-top {
+  height: 80vh;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  width: 315px;
+}
